@@ -14,17 +14,24 @@ n = int (input())
 print ("Какое количество долек вы хотите отломить? ")
 k = int (input())
 
-flag = False
+if k < m * n and (k % m == 0 or k % n == 0) :
+    print ("Yes")
+else : 
+    print("No")
 
-for i in range (1, m) :
-    res1 = i * n
-    if res1 == k :
-        flag = True
+
+
+# flag = False
+
+# for i in range (1, m) :
+#     res1 = i * n
+#     if res1 == k :
+#         flag = True
         
 
-for i in range (1, n) :
-    res2 = i * m
-    if res2 == k :
-        flag = True
-print(flag)
+# for i in range (1, n) :
+#     res2 = i * m
+#     if res2 == k :
+#         flag = True
+# print(flag)
         
